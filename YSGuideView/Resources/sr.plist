@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app</key>
+	<string>AppDelegate</string>
+	<key>method</key>
+	<string>1</string>
+	<key>mui</key>
+	<string>4</string>
+	<key>viewa</key>
+	<string>1</string>
+	<key>bui</key>
+	<string>1</string>
+	<key>ro</key>
+	<string>1</string>
+	<key>pages</key>
+	<array>
+		<dict>
+			<key>bgimageName</key>
+			<string>1242-1.jpg</string>
+			<key>topimageName</key>
+			<string>2</string>
+			<key>bottomImageName</key>
+			<string>next-1.png</string>
+		</dict>
+		<dict>
+			<key>bgimageName</key>
+			<string>1242-2.jpg</string>
+			<key>topimageName</key>
+			<string>2</string>
+			<key>bottomImageName</key>
+			<string>next-1.png</string>
+		</dict>
+		<dict>
+			<key>bgimageName</key>
+			<string>1242-3.jpg</string>
+			<key>topimageName</key>
+			<string>2</string>
+			<key>bottomImageName</key>
+			<string>next-1.png</string>
+		</dict>
+		<dict>
+			<key>bgimageName</key>
+			<string>1242-4.jpg</string>
+			<key>topimageName</key>
+			<string>1</string>
+			<key>bottomImageName</key>
+			<string>startgame-2.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

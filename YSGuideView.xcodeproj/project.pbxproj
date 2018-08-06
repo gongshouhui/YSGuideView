@@ -14,6 +14,12 @@
 		5967F60221182E35003AEFC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5967F60121182E35003AEFC8 /* main.m */; };
 		5967F60A21182E89003AEFC8 /* YSGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5967F60921182E89003AEFC8 /* YSGuideViewController.m */; };
 		5967F60D211835A4003AEFC8 /* YSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5967F60C211835A4003AEFC8 /* YSConstants.m */; };
+		5967F61821184C1C003AEFC8 /* 1242-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61421184C1C003AEFC8 /* 1242-2.jpg */; };
+		5967F61921184C1C003AEFC8 /* 1242-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61521184C1C003AEFC8 /* 1242-3.jpg */; };
+		5967F61A21184C1C003AEFC8 /* 1242-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61621184C1C003AEFC8 /* 1242-1.jpg */; };
+		5967F61B21184C1C003AEFC8 /* 1242-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61721184C1C003AEFC8 /* 1242-4.jpg */; };
+		5967F61D21185045003AEFC8 /* sr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61C21185045003AEFC8 /* sr.plist */; };
+		5967F620211850AF003AEFC8 /* YSPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5967F61F211850AF003AEFC8 /* YSPageModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,13 @@
 		5967F60921182E89003AEFC8 /* YSGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSGuideViewController.m; sourceTree = "<group>"; };
 		5967F60B211835A4003AEFC8 /* YSConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSConstants.h; sourceTree = "<group>"; };
 		5967F60C211835A4003AEFC8 /* YSConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSConstants.m; sourceTree = "<group>"; };
+		5967F61421184C1C003AEFC8 /* 1242-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1242-2.jpg"; sourceTree = "<group>"; };
+		5967F61521184C1C003AEFC8 /* 1242-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1242-3.jpg"; sourceTree = "<group>"; };
+		5967F61621184C1C003AEFC8 /* 1242-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1242-1.jpg"; sourceTree = "<group>"; };
+		5967F61721184C1C003AEFC8 /* 1242-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1242-4.jpg"; sourceTree = "<group>"; };
+		5967F61C21185045003AEFC8 /* sr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sr.plist; sourceTree = "<group>"; };
+		5967F61E211850AF003AEFC8 /* YSPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPageModel.h; sourceTree = "<group>"; };
+		5967F61F211850AF003AEFC8 /* YSPageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPageModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +78,38 @@
 				5967F5F321182E34003AEFC8 /* AppDelegate.m */,
 				5967F60821182E89003AEFC8 /* YSGuideViewController.h */,
 				5967F60921182E89003AEFC8 /* YSGuideViewController.m */,
+				5967F61E211850AF003AEFC8 /* YSPageModel.h */,
+				5967F61F211850AF003AEFC8 /* YSPageModel.m */,
 				5967F60B211835A4003AEFC8 /* YSConstants.h */,
 				5967F60C211835A4003AEFC8 /* YSConstants.m */,
 				5967F5F821182E34003AEFC8 /* Main.storyboard */,
 				5967F5FB21182E35003AEFC8 /* Assets.xcassets */,
+				5967F60E21184B66003AEFC8 /* Resources */,
 				5967F5FD21182E35003AEFC8 /* LaunchScreen.storyboard */,
 				5967F60021182E35003AEFC8 /* Info.plist */,
 				5967F60121182E35003AEFC8 /* main.m */,
 			);
 			path = YSGuideView;
+			sourceTree = "<group>";
+		};
+		5967F60E21184B66003AEFC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5967F61C21185045003AEFC8 /* sr.plist */,
+				5967F60F21184BC0003AEFC8 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5967F60F21184BC0003AEFC8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5967F61621184C1C003AEFC8 /* 1242-1.jpg */,
+				5967F61421184C1C003AEFC8 /* 1242-2.jpg */,
+				5967F61521184C1C003AEFC8 /* 1242-3.jpg */,
+				5967F61721184C1C003AEFC8 /* 1242-4.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,9 +169,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5967F61821184C1C003AEFC8 /* 1242-2.jpg in Resources */,
 				5967F5FF21182E35003AEFC8 /* LaunchScreen.storyboard in Resources */,
+				5967F61921184C1C003AEFC8 /* 1242-3.jpg in Resources */,
+				5967F61B21184C1C003AEFC8 /* 1242-4.jpg in Resources */,
+				5967F61A21184C1C003AEFC8 /* 1242-1.jpg in Resources */,
 				5967F5FC21182E35003AEFC8 /* Assets.xcassets in Resources */,
 				5967F5FA21182E34003AEFC8 /* Main.storyboard in Resources */,
+				5967F61D21185045003AEFC8 /* sr.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +190,7 @@
 				5967F60221182E35003AEFC8 /* main.m in Sources */,
 				5967F60D211835A4003AEFC8 /* YSConstants.m in Sources */,
 				5967F5F421182E34003AEFC8 /* AppDelegate.m in Sources */,
+				5967F620211850AF003AEFC8 /* YSPageModel.m in Sources */,
 				5967F60A21182E89003AEFC8 /* YSGuideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
