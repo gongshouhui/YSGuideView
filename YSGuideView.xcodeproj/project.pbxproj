@@ -20,6 +20,13 @@
 		5967F61B21184C1C003AEFC8 /* 1242-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61721184C1C003AEFC8 /* 1242-4.jpg */; };
 		5967F61D21185045003AEFC8 /* sr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5967F61C21185045003AEFC8 /* sr.plist */; };
 		5967F620211850AF003AEFC8 /* YSPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5967F61F211850AF003AEFC8 /* YSPageModel.m */; };
+		5967F62221192DD8003AEFC8 /* bottom_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F62121192DD8003AEFC8 /* bottom_one.jpg */; };
+		5967F62421192DDE003AEFC8 /* match_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F62321192DDE003AEFC8 /* match_one.jpg */; };
+		5967F62621192DE3003AEFC8 /* top_one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F62521192DE3003AEFC8 /* top_one.jpg */; };
+		5967F62921192F59003AEFC8 /* top_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F62721192F59003AEFC8 /* top_two.jpg */; };
+		5967F62A21192F59003AEFC8 /* bottom_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5967F62821192F59003AEFC8 /* bottom_two.jpg */; };
+		5967F62D2119304F003AEFC8 /* YSGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5967F62C2119304F003AEFC8 /* YSGuideView.m */; };
+		5967F62F2119AA5E003AEFC8 /* startgame-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5967F62E2119AA5E003AEFC8 /* startgame-2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,14 @@
 		5967F61C21185045003AEFC8 /* sr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sr.plist; sourceTree = "<group>"; };
 		5967F61E211850AF003AEFC8 /* YSPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSPageModel.h; sourceTree = "<group>"; };
 		5967F61F211850AF003AEFC8 /* YSPageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSPageModel.m; sourceTree = "<group>"; };
+		5967F62121192DD8003AEFC8 /* bottom_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottom_one.jpg; sourceTree = "<group>"; };
+		5967F62321192DDE003AEFC8 /* match_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = match_one.jpg; sourceTree = "<group>"; };
+		5967F62521192DE3003AEFC8 /* top_one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top_one.jpg; sourceTree = "<group>"; };
+		5967F62721192F59003AEFC8 /* top_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top_two.jpg; sourceTree = "<group>"; };
+		5967F62821192F59003AEFC8 /* bottom_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottom_two.jpg; sourceTree = "<group>"; };
+		5967F62B2119304F003AEFC8 /* YSGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSGuideView.h; sourceTree = "<group>"; };
+		5967F62C2119304F003AEFC8 /* YSGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSGuideView.m; sourceTree = "<group>"; };
+		5967F62E2119AA5E003AEFC8 /* startgame-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startgame-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,8 @@
 				5967F5F321182E34003AEFC8 /* AppDelegate.m */,
 				5967F60821182E89003AEFC8 /* YSGuideViewController.h */,
 				5967F60921182E89003AEFC8 /* YSGuideViewController.m */,
+				5967F62B2119304F003AEFC8 /* YSGuideView.h */,
+				5967F62C2119304F003AEFC8 /* YSGuideView.m */,
 				5967F61E211850AF003AEFC8 /* YSPageModel.h */,
 				5967F61F211850AF003AEFC8 /* YSPageModel.m */,
 				5967F60B211835A4003AEFC8 /* YSConstants.h */,
@@ -104,10 +121,16 @@
 		5967F60F21184BC0003AEFC8 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5967F62E2119AA5E003AEFC8 /* startgame-2.png */,
 				5967F61621184C1C003AEFC8 /* 1242-1.jpg */,
 				5967F61421184C1C003AEFC8 /* 1242-2.jpg */,
 				5967F61521184C1C003AEFC8 /* 1242-3.jpg */,
 				5967F61721184C1C003AEFC8 /* 1242-4.jpg */,
+				5967F62121192DD8003AEFC8 /* bottom_one.jpg */,
+				5967F62321192DDE003AEFC8 /* match_one.jpg */,
+				5967F62521192DE3003AEFC8 /* top_one.jpg */,
+				5967F62821192F59003AEFC8 /* bottom_two.jpg */,
+				5967F62721192F59003AEFC8 /* top_two.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -169,14 +192,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5967F62621192DE3003AEFC8 /* top_one.jpg in Resources */,
+				5967F62421192DDE003AEFC8 /* match_one.jpg in Resources */,
+				5967F62921192F59003AEFC8 /* top_two.jpg in Resources */,
 				5967F61821184C1C003AEFC8 /* 1242-2.jpg in Resources */,
 				5967F5FF21182E35003AEFC8 /* LaunchScreen.storyboard in Resources */,
 				5967F61921184C1C003AEFC8 /* 1242-3.jpg in Resources */,
 				5967F61B21184C1C003AEFC8 /* 1242-4.jpg in Resources */,
+				5967F62221192DD8003AEFC8 /* bottom_one.jpg in Resources */,
 				5967F61A21184C1C003AEFC8 /* 1242-1.jpg in Resources */,
 				5967F5FC21182E35003AEFC8 /* Assets.xcassets in Resources */,
+				5967F62A21192F59003AEFC8 /* bottom_two.jpg in Resources */,
 				5967F5FA21182E34003AEFC8 /* Main.storyboard in Resources */,
 				5967F61D21185045003AEFC8 /* sr.plist in Resources */,
+				5967F62F2119AA5E003AEFC8 /* startgame-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5967F60221182E35003AEFC8 /* main.m in Sources */,
+				5967F62D2119304F003AEFC8 /* YSGuideView.m in Sources */,
 				5967F60D211835A4003AEFC8 /* YSConstants.m in Sources */,
 				5967F5F421182E34003AEFC8 /* AppDelegate.m in Sources */,
 				5967F620211850AF003AEFC8 /* YSPageModel.m in Sources */,
@@ -332,7 +362,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3D5L633Z9;
 				INFOPLIST_FILE = YSGuideView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +380,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3D5L633Z9;
 				INFOPLIST_FILE = YSGuideView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

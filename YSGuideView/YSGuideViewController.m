@@ -9,6 +9,7 @@
 #import "YSGuideViewController.h"
 #import "YSConstants.h"
 #import "YSPageModel.h"
+#import "YSGuideView.h"
 @interface YSGuideViewController ()
 
 @end
@@ -17,20 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSArray *dataArray = [self getData];
+    self.view = [[YSGuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+   
 }
-- (NSArray *)getData {
-    NSString *path = [[NSBundle mainBundle]pathForResource:@"sr" ofType:@"plist"];
-    NSDictionary *plistDic = [NSDictionary dictionaryWithContentsOfFile:path];
-    NSMutableArray *mutArr = [NSMutableArray array];
-    for (NSDictionary *dic in plistDic[@"pages"]) {
-        YSPageModel *model = [[YSPageModel alloc]init];
-        [model setValuesForKeysWithDictionary:dic];
-        [mutArr addObject:model];
-    }
-    return mutArr;
-}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

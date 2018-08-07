@@ -20,33 +20,33 @@
 			<key>bgimageName</key>
 			<string>1242-1.jpg</string>
 			<key>topimageName</key>
-			<string>2</string>
+			<string>top_one.jpg</string>
 			<key>bottomImageName</key>
-			<string>next-1.png</string>
+			<string>bottom_one.jpg</string>
 		</dict>
 		<dict>
 			<key>bgimageName</key>
 			<string>1242-2.jpg</string>
 			<key>topimageName</key>
-			<string>2</string>
+			<string>top_two.jpg</string>
 			<key>bottomImageName</key>
-			<string>next-1.png</string>
+			<string>bottom_two.jpg</string>
 		</dict>
 		<dict>
 			<key>bgimageName</key>
 			<string>1242-3.jpg</string>
 			<key>topimageName</key>
-			<string>2</string>
+			<string>top_one.jpg</string>
 			<key>bottomImageName</key>
-			<string>next-1.png</string>
+			<string>bottom_one.jpg</string>
 		</dict>
 		<dict>
 			<key>bgimageName</key>
 			<string>1242-4.jpg</string>
 			<key>topimageName</key>
-			<string>1</string>
+			<string>top_two.jpg</string>
 			<key>bottomImageName</key>
-			<string>startgame-2.png</string>
+			<string>bottom_two.jpg</string>
 		</dict>
 	</array>
 </dict>
