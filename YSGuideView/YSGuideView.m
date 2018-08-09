@@ -16,6 +16,7 @@
 @property (nonatomic,strong) NSMutableArray *dataArr;
 @property (nonatomic,assign) NSInteger index;
 @property (nonatomic,assign) CGPoint originCenter;
+@property (nonatomic,strong) YSPageModel *model;
 @end
 @implementation YSGuideView
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -54,9 +55,14 @@
 }
 - (void)reloadView {
     YSPageModel *model = self.dataArr[self.index];
+    self.model = model;
     self.bgImageView.image = [UIImage imageNamed:model.bgimageName];
     self.topImageView.image = [UIImage imageNamed:model.topimageName];
     self.bottomImageView.image = [UIImage imageNamed:model.bottomImageName];
+    self.topImageView.frame = CGRectMake(0, 0, model.imageWidth, model.imageWidth);
+    self.topImageView.center = CGPointMake(self.center.x,model.topMargin + model.imageWidth/2);
+    self.bottomImageView.frame = CGRectMake(0, 0, model.imageWidth, model.imageWidth);
+    self.bottomImageView.center = CGPointMake(self.center.x, SCREEN_HEIGHT - model.imageWidth -model.imageWidth/2);
     
 }
 //获取plist里的数据
@@ -89,7 +95,9 @@
    
     if (panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
         // 判断是否当前移动的点是否在圈内
-        if ([self circleFrame:self.topImageView.frame constanFrame:self.bottomImageView.frame]) {
+        //扩大范围
+        CGRect newRect = CGRectMake(self.topImageView.frame.origin.x, self.topImageView.frame.origin.y, self.topImageView.frame.size.width + 10, self.topImageView.frame.size.height + 10);
+        if ([self circleFrame:newRect constanFrame:self.bottomImageView.frame]) {
             self.topImageView.image = originImageView.image;
              self.index++;
             [self originalPosition];
@@ -123,17 +131,26 @@
         self.topImageView.hidden = YES;
         self.bottomImageView.hidden = YES;
         UIButton *nestButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [nestButton setImage:[UIImage imageNamed:@"startgame-2.png"] forState:UIControlStateNormal];
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"sr" ofType:@"plist"];
+        NSDictionary *plistDic = [NSDictionary dictionaryWithContentsOfFile:path];
+        [nestButton setImage:[UIImage imageNamed:plistDic[@"nextButtonName"]] forState:UIControlStateNormal];
         [self addSubview:nestButton];
         nestButton.frame = CGRectMake(0, 0, SCREEN_WIDTH, 350);
         nestButton.center = self.center;
+        [nestButton addTarget:self action:@selector(nextButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
         
     }
-    
 }
+- (void)nextButtonDidClick {
+    if (self.nextActionBlock) {
+        self.nextActionBlock();
+    }
+}
+
 - (void)originalPosition {
-     self.topImageView.center = CGPointMake(self.center.x, 40+25);
-    self.bottomImageView.center = CGPointMake(self.center.x, SCREEN_HEIGHT - 40 -25);
+    YSPageModel *model = self.model;
+    self.topImageView.center = CGPointMake(self.center.x,model.topMargin + model.imageWidth/2);
+    self.bottomImageView.center = CGPointMake(self.center.x, SCREEN_HEIGHT - model.imageWidth -model.imageWidth/2);
     self.originCenter = self.bottomImageView.center;
 }
 @end

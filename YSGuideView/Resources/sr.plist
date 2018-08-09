@@ -12,8 +12,8 @@
 	<string>1</string>
 	<key>bui</key>
 	<string>1</string>
-	<key>ro</key>
-	<string>1</string>
+	<key>nextButtonName</key>
+	<string>startgame-2</string>
 	<key>pages</key>
 	<array>
 		<dict>
@@ -23,6 +23,12 @@
 			<string>top_one.jpg</string>
 			<key>bottomImageName</key>
 			<string>bottom_one.jpg</string>
+			<key>topMargin</key>
+			<string>40</string>
+			<key>bottomMargin</key>
+			<string>40</string>
+			<key>imageWidth</key>
+			<string>50</string>
 		</dict>
 		<dict>
 			<key>bgimageName</key>
@@ -31,6 +37,12 @@
 			<string>top_two.jpg</string>
 			<key>bottomImageName</key>
 			<string>bottom_two.jpg</string>
+			<key>topMargin</key>
+			<string>40</string>
+			<key>bottomMargin</key>
+			<string>40</string>
+			<key>imageWidth</key>
+			<string>50</string>
 		</dict>
 		<dict>
 			<key>bgimageName</key>
@@ -39,6 +51,12 @@
 			<string>top_one.jpg</string>
 			<key>bottomImageName</key>
 			<string>bottom_one.jpg</string>
+			<key>topMargin</key>
+			<string>40</string>
+			<key>bottomMargin</key>
+			<string>40</string>
+			<key>imageWidth</key>
+			<string>50</string>
 		</dict>
 		<dict>
 			<key>bgimageName</key>
@@ -47,6 +65,12 @@
 			<string>top_two.jpg</string>
 			<key>bottomImageName</key>
 			<string>bottom_two.jpg</string>
+			<key>topMargin</key>
+			<string>40</string>
+			<key>bottomMargin</key>
+			<string>40</string>
+			<key>imageWidth</key>
+			<string>50</string>
 		</dict>
 	</array>
 </dict>

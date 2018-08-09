@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "YSPageModel.h"
 @interface YSGuideView : UIView
+@property (nonatomic,copy) void(^nextActionBlock)();
 @end

@@ -18,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view = [[YSGuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    YSGuideView *guideView = [[YSGuideView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [self.view addSubview:guideView];
+    [guideView setNextActionBlock:^{
+        NSLog(@"进入游戏按钮被点击了");
+    }];
+    
    
 }
 
