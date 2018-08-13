@@ -14,6 +14,10 @@
 	<string>1</string>
 	<key>nextButtonName</key>
 	<string>startgame-2</string>
+	<key>nextButtonWidth</key>
+	<string>400</string>
+	<key>nextButtonHeight</key>
+	<integer>350</integer>
 	<key>pages</key>
 	<array>
 		<dict>

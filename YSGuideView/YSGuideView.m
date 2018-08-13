@@ -135,7 +135,7 @@
         NSDictionary *plistDic = [NSDictionary dictionaryWithContentsOfFile:path];
         [nestButton setImage:[UIImage imageNamed:plistDic[@"nextButtonName"]] forState:UIControlStateNormal];
         [self addSubview:nestButton];
-        nestButton.frame = CGRectMake(0, 0, SCREEN_WIDTH, 350);
+        nestButton.frame = CGRectMake(0, 0, [plistDic[@"nextButtonWidth"] integerValue], [plistDic[@"nextButtonHeight"] integerValue]);
         nestButton.center = self.center;
         [nestButton addTarget:self action:@selector(nextButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
         
